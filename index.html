@@ -1,0 +1,665 @@
+<!doctype html>
+<html>
+    <head>
+            <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+<style>
+
+.links line {
+  stroke: grey;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.node-active{
+  stroke: #555;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #555;
+  stroke-opacity: .3;
+}
+
+.link-active {
+  stroke-opacity: 1;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+#map{
+    border: 1px #555 solid;
+    width:800px;
+    height:600px;
+}
+
+</style>
+
+    </head>
+    <body>
+
+    <header>
+  <a href="javascript:void(0)" class="trigger"><span></span></a>
+  <nav>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#flexibility">Schemes</a></li>
+      <li><a href="#af">Affinity Diagram</a></li>
+      <li><a href="#structure">Structure</a></li>
+      <li><a href="#taxonomy">Taxonomy Levels</a></li>
+      <li><a href="#journey">Transitions and Journeys</a></li>
+      <li><a href="#matrix">Matrix</a></li>
+      <li><a href="#connections">Connections</a></li>
+      <li><a href="#vocab">Vocabulary</a></li>
+      <li><a href="#sample">Single Memory Sample</a></li>
+      <li><a href="#aa">Assotiation Aspects</a></li>
+      <li><a href="#scenario1">Scenario Map: Retreival</a></li>
+      <li><a href="#scenario2">Scenario Map: Imaginarium</a></li>
+      <li><a href="#force">Example</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="intro">
+  <div>
+    <h4>---proposal</h4>
+    <p>
+Placing yourself into a certain environment encourages an awakening of specific subconscious memories and feelings that help to recall  a certain knowledge as well as influences a formation of new ideas.
+</p>
+<p>
+Flexible multi room dimension (FMD) is an embedded model of memories storage and retrieval mechanism, which allows a person to recall and access memories, store moments, think, dream and create ideas with spatial interaction with environment.Through a multiple connections, interactions, and crossaccosiations, the person can place themselves in a memory room and, by surrounding themselves with different environments, FMD help to recall details of dependent taxonomies or, by mixing a certain memories details, produce new imagination environment.
+</p>
+</div>
+  </section>
+<section id="">
+    <div>
+        <h4>Major Functions and Interactions:</h4>
+        <p>
+            <ul>
+                <li><b>store memory (room creation)</b> - new memory will be created as an object with attributes and behaviors. Based this to be applied, memory will be placed in a specific room, or, in case if memory is very new, it may create a new room.</li>
+                <li><b>memories retrieval (retreival journey)</b> - FDM helps to retrieve some memories that are not constantly clear by default state. It allows to open a gate or set of gates through association connections and place a person into the situation for easir details access.</li>
+                <li><b>idea creation (imaginarium)</b> - a special room of dreaming. By selecting association aspects and connections, the person allows stored memory information to reach  Imaginarium. Through mixing aspects in different amounts, new dreams and ideas got created.</li>
+                <li><b>fast access (house reshape)</b> - the house can be reshaped for allowing faster and efficient transition between spaces.</li>
+                <li><b>maintenance (house state)</b> - set of FDM that allows constant access and circulation of certain type of memories. It places a person in a specific situation that allows access to particular knowledge and memories.</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+<section id="flexibility">
+    <div>
+        <h4>---organizational_shemes</h4>
+        <h4>Reorganization and House states</h4>
+        <p>Depending on the purpose and request, the house can be reshaped for allowing faster and efficient transition between spaces: connections will shrink, be blocked or opened depending on input (question/request). Reorganization of the house is based on classification and results in a house state (current house state). House state affects goals/mood and behavioral abilities of the person. Depending on which state and organization is active, some memory details has more connections to the current state than others, which maintain a certain background (present). For example, if person is focused on work, the house state will be reshaped in a way when the access to work related information and skills can be accessed with festest ways possible.</p>
+        <p>Single Room contains set of memories organized in a particular way through conditioning: need and request (input) of the person defines wich memories and memory details need to be primary, and wich ones can have a secondary role at the moment.</p>
+
+    </div>
+</section>
+
+<section id="af">
+    <div>
+        <h4>---affinity_diagrams</h4>
+    <img src="img/af.png"/>
+</div>
+  </section>
+
+<section id="structure">
+    <div>
+        <h4>---organizational_template</h4>
+        <h4>Organizational Structure</h4>
+        <p>FMD has a mixed structure: overall it is a granular multilevel matrix, but there is a possibility of hierarchically organised branches and subbranches on more detailed level of the memory details in rooms. It allows FMD easily reorganize the order and shapei(be reshaped for short or long term) depending on need, association and connections: multiple cross-connected rooms contain sets of memory details with related tags. Memory details to have internal and external connection with different distance.
+        </p>
+            </div>
+</section>
+
+<section id="taxonomy">
+    <div>
+        <h4>Taxonomy Levels</h4>
+<img src="img/org-template.png"/>
+    </div>
+</section>
+<section id="journey">
+    <div>
+    <h4>---how_and_why_memories_are_accessed?</h4>
+    <h4>Transitions and journeys</h4>
+ <p>Different states of the house allow a variety of transitions from one memory room to another. Depending on type of request and distance between memory rooms and details, transition between the rooms can differ in time and experience (in other words, it can be direct and indirect). Sometimes accessing a certain memory can require multiple transitions. Besides that, FDM can generate a number of travel maps, that allows a person take different pathways while they think and discover different information through easier memory details access.</p>
+
+ <p>
+The reason of accessing the memories in some ways shapes a type of experience that the person may have with FDM. Single Room contains set of memories organized in a particular order. Memories may be rearranged based on priority of information type and request/need or priority association. There also a set of knowledge and memories that are needed in everyday life. This Key Memories carried with a person all the time
+ </p>
+   </div>
+  </section>
+<section id="matrix">
+<div>
+
+        <img src="img/org-matrix.png"/>
+    </div>
+</section>
+<section id="connections">
+    <div>
+        <h4>Connections</h4>
+        <p>Memory details will be connected with related ones through different type of connection gates. Connection gates vary depending on type of relationships between memory details: they can have different length, diameter and material depending on type of connection and type of information. Each connection has maximum and minimum length, which directly affects ways how room can be reshaped. Besides, changing in connection length affects a clarity of a certain memories in the specific moment/state.</p>
+        <h4>Connection gate types:</h4>
+        <ul>
+        <li><b>internal and external</b> gatess are the connections between memories either within the room or outside of the room.</li>
+        <li><b>subconscious</b> gates are the connections between memories that cannot be easily resized or blocked.</li>
+        <li><b>logical</b> gates are the connections that are made through logical relations or associations.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="vocab">
+    <div>
+        <h4>---controlled_vocabulary</h4>
+         <ul>
+            <li>Room of Memory - accumulation of memories of certain cetegory, mostly based on general concept or topic</li>
+            <li>Memory detail or Association Aspect - type of information that forms memory and perception of the memories</li>
+            <li>Connection gate - connection that defines relationship type and strength between accociation aspects</li>
+            <li>Journey of type - traveling through memories and association aspects of specific type: emotions, knowledge, social experiences and etc.</li>
+            <li>Retrieval Journey - journey that allows to recall a specific siruation, detail, or set from the memory storage.</li>
+            <li>Travel Map - Map that shows a person possible journeys for recalling and restoring specific moments.</li>
+            <li>Transition - moving from one Memory Room to Another one</li>
+            <li>Default Knowledge Set - amount of memories that required for everyday experiences</li>
+            <li>House state - fixed shape of the FMD that opens a set of specific gates for maintaining retreval of srtain information.</li>
+            <li>Room Conditioning - tags and aspects applied to the room in order to maintain a certain atmosphere and environment</li>
+         </ul>
+    </div>
+</section>
+
+    <section id="sample">
+    <div>
+<h4>---single_memory_sample</h4>
+
+ <img src="img/single-mem-structure.png"/>
+   </div>
+  </section>
+
+      <section id="aa">
+    <div>
+
+ <img src="img/single-mem.png"/>
+   </div>
+  </section>
+      <section id="scenario1">
+    <div>
+<h4>---scenario_maps
+</h4>
+
+ <img src="img/retreival-map.png"/>
+
+   </div>
+  </section>
+        <section id="scenario2">
+    <div>
+ <img src="img/imaginarium.png"/>
+
+   </div>
+  </section>
+
+
+  <section id="force">
+<div>
+<p><i>(I tried to mock up the flexibility behavior. Ideally it should not have that much open ended objects)</i></p>
+  <svg width="960" height="600"></svg>
+  </div>
+</section>
+</main>
+<script>
+$('.trigger').click(function(){
+  $('nav').toggleClass('nav-active');
+  $(this).toggleClass('trigger-active');
+});
+
+$('nav ul li a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
+var svg = d3.select("svg"),
+    width = 960,
+    height = 600;
+
+const myJSON = {
+  "nodes": [
+    {"id": "Myriel", "group": 1},
+    {"id": "Napoleon", "group": 11},
+    {"id": "Mlle.Baptistine", "group": 11},
+    {"id": "Mme.Magloire", "group": 1},
+    {"id": "CountessdeLo", "group": 11},
+    {"id": "Geborand", "group": 1},
+    {"id": "Champtercier", "group": 1},
+    {"id": "Cravatte", "group": 1},
+    {"id": "Count", "group": 1},
+    {"id": "OldMan", "group": 1},
+    {"id": "Labarre", "group": 2},
+    {"id": "Valjean", "group": 2},
+    {"id": "Marguerite", "group": 3},
+    {"id": "Mme.deR", "group": 2},
+    {"id": "Isabeau", "group": 2},
+    {"id": "Gervais", "group": 2},
+    {"id": "Tholomyes", "group": 3},
+    {"id": "Listolier", "group": 3},
+    {"id": "Fameuil", "group": 23},
+    {"id": "Blacheville", "group": 23},
+    {"id": "Favourite", "group": 3},
+    {"id": "Dahlia", "group": 3},
+    {"id": "Zephine", "group": 3},
+    {"id": "Fantine", "group": 23},
+    {"id": "Mme.Thenardier", "group": 4},
+    {"id": "Thenardier", "group": 4},
+    {"id": "Cosette", "group": 5},
+    {"id": "Javert", "group": 4},
+    {"id": "Fauchelevent", "group": 0},
+    {"id": "Bamatabois", "group": 2},
+    {"id": "Perpetue", "group": 3},
+    {"id": "Simplice", "group": 2},
+    {"id": "Scaufflaire", "group": 22},
+    {"id": "Woman1", "group": 2},
+    {"id": "Judge", "group": 2},
+    {"id": "Champmathieu", "group": 2},
+    {"id": "Brevet", "group": 2},
+    {"id": "Chenildieu", "group": 2},
+    {"id": "Cochepaille", "group": 2},
+    {"id": "Pontmercy", "group": 4},
+    {"id": "Boulatruelle", "group": 6},
+    {"id": "Eponine", "group": 4},
+    {"id": "Anzelma", "group": 4},
+    {"id": "Woman2", "group": 5},
+    {"id": "MotherInnocent", "group": 0},
+    {"id": "Gribier", "group": 0},
+    {"id": "Jondrette", "group": 7},
+    {"id": "Mme.Burgon", "group": 7},
+    {"id": "Gavroche", "group": 8},
+    {"id": "Gillenormand", "group": 15},
+    {"id": "Magnon", "group": 5},
+    {"id": "Mlle.Gillenormand", "group": 5},
+    {"id": "Mme.Pontmercy", "group": 5},
+    {"id": "Mlle.Vaubois", "group": 5},
+    {"id": "Lt.Gillenormand", "group": 5},
+    {"id": "Marius", "group": 8},
+    {"id": "BaronessT", "group": 5},
+    {"id": "Mabeuf", "group": 8},
+    {"id": "Enjolras", "group": 8},
+    {"id": "Combeferre", "group": 19},
+    {"id": "Prouvaire", "group": 19},
+    {"id": "Feuilly", "group": 8},
+    {"id": "Courfeyrac", "group": 18},
+    {"id": "Bahorel", "group": 8},
+    {"id": "Bossuet", "group": 18},
+    {"id": "Joly", "group": 8},
+    {"id": "Grantaire", "group": 8},
+    {"id": "MotherPlutarch", "group": 9},
+    {"id": "Gueulemer", "group": 4},
+    {"id": "Babet", "group": 4},
+    {"id": "Claquesous", "group": 4},
+    {"id": "Montparnasse", "group": 4},
+    {"id": "Toussaint", "group": 5},
+    {"id": "Child1", "group": 10},
+    {"id": "Child2", "group": 10},
+    {"id": "Brujon", "group": 4},
+    {"id": "Mme.Hucheloup", "group": 8}
+  ],
+  "links": [
+    {"source": "Napoleon", "target": "Myriel", "value": 1},
+    {"source": "Mlle.Baptistine", "target": "Myriel", "value": 8},
+    {"source": "Mme.Magloire", "target": "Myriel", "value": 10},
+    {"source": "Mme.Magloire", "target": "Mlle.Baptistine", "value": 6},
+    {"source": "CountessdeLo", "target": "Myriel", "value": 1},
+    {"source": "Geborand", "target": "Myriel", "value": 1},
+    {"source": "Champtercier", "target": "Myriel", "value": 1},
+    {"source": "Cravatte", "target": "Myriel", "value": 1},
+    {"source": "Count", "target": "Myriel", "value": 2},
+    {"source": "OldMan", "target": "Myriel", "value": 1},
+    {"source": "Valjean", "target": "Labarre", "value": 1},
+    {"source": "Valjean", "target": "Mme.Magloire", "value": 3},
+    {"source": "Valjean", "target": "Mlle.Baptistine", "value": 3},
+    {"source": "Valjean", "target": "Myriel", "value": 5},
+    {"source": "Marguerite", "target": "Valjean", "value": 1},
+    {"source": "Mme.deR", "target": "Valjean", "value": 1},
+    {"source": "Isabeau", "target": "Valjean", "value": 1},
+    {"source": "Gervais", "target": "Valjean", "value": 1},
+    {"source": "Listolier", "target": "Tholomyes", "value": 4},
+    {"source": "Fameuil", "target": "Tholomyes", "value": 4},
+    {"source": "Fameuil", "target": "Listolier", "value": 4},
+    {"source": "Blacheville", "target": "Tholomyes", "value": 4},
+    {"source": "Blacheville", "target": "Listolier", "value": 4},
+    {"source": "Blacheville", "target": "Fameuil", "value": 4},
+    {"source": "Favourite", "target": "Tholomyes", "value": 3},
+    {"source": "Favourite", "target": "Listolier", "value": 3},
+    {"source": "Favourite", "target": "Fameuil", "value": 3},
+    {"source": "Favourite", "target": "Blacheville", "value": 4},
+    {"source": "Dahlia", "target": "Tholomyes", "value": 3},
+    {"source": "Dahlia", "target": "Listolier", "value": 3},
+    {"source": "Dahlia", "target": "Fameuil", "value": 3},
+    {"source": "Dahlia", "target": "Blacheville", "value": 3},
+    {"source": "Dahlia", "target": "Favourite", "value": 5},
+    {"source": "Zephine", "target": "Tholomyes", "value": 3},
+    {"source": "Zephine", "target": "Listolier", "value": 3},
+    {"source": "Zephine", "target": "Fameuil", "value": 3},
+    {"source": "Zephine", "target": "Blacheville", "value": 3},
+    {"source": "Zephine", "target": "Favourite", "value": 4},
+    {"source": "Zephine", "target": "Dahlia", "value": 4},
+    {"source": "Fantine", "target": "Tholomyes", "value": 3},
+    {"source": "Fantine", "target": "Listolier", "value": 3},
+    {"source": "Fantine", "target": "Fameuil", "value": 3},
+    {"source": "Fantine", "target": "Blacheville", "value": 3},
+    {"source": "Fantine", "target": "Favourite", "value": 4},
+    {"source": "Fantine", "target": "Dahlia", "value": 4},
+    {"source": "Fantine", "target": "Zephine", "value": 4},
+    {"source": "Fantine", "target": "Marguerite", "value": 2},
+    {"source": "Fantine", "target": "Valjean", "value": 9},
+    {"source": "Mme.Thenardier", "target": "Fantine", "value": 2},
+    {"source": "Mme.Thenardier", "target": "Valjean", "value": 7},
+    {"source": "Thenardier", "target": "Mme.Thenardier", "value": 13},
+    {"source": "Thenardier", "target": "Fantine", "value": 1},
+    {"source": "Thenardier", "target": "Valjean", "value": 12},
+    {"source": "Cosette", "target": "Mme.Thenardier", "value": 4},
+    {"source": "Cosette", "target": "Valjean", "value": 31},
+    {"source": "Cosette", "target": "Tholomyes", "value": 1},
+    {"source": "Cosette", "target": "Thenardier", "value": 1},
+    {"source": "Javert", "target": "Valjean", "value": 17},
+    {"source": "Javert", "target": "Fantine", "value": 5},
+    {"source": "Javert", "target": "Thenardier", "value": 5},
+    {"source": "Javert", "target": "Mme.Thenardier", "value": 1},
+    {"source": "Javert", "target": "Cosette", "value": 1},
+    {"source": "Fauchelevent", "target": "Valjean", "value": 8},
+    {"source": "Fauchelevent", "target": "Javert", "value": 1},
+    {"source": "Bamatabois", "target": "Fantine", "value": 1},
+    {"source": "Bamatabois", "target": "Javert", "value": 1},
+    {"source": "Bamatabois", "target": "Valjean", "value": 2},
+    {"source": "Perpetue", "target": "Fantine", "value": 1},
+    {"source": "Simplice", "target": "Perpetue", "value": 2},
+    {"source": "Simplice", "target": "Valjean", "value": 3},
+    {"source": "Simplice", "target": "Fantine", "value": 2},
+    {"source": "Simplice", "target": "Javert", "value": 1},
+    {"source": "Scaufflaire", "target": "Valjean", "value": 1},
+    {"source": "Woman1", "target": "Valjean", "value": 2},
+    {"source": "Woman1", "target": "Javert", "value": 1},
+    {"source": "Judge", "target": "Valjean", "value": 3},
+    {"source": "Judge", "target": "Bamatabois", "value": 2},
+    {"source": "Champmathieu", "target": "Valjean", "value": 3},
+    {"source": "Champmathieu", "target": "Judge", "value": 3},
+    {"source": "Champmathieu", "target": "Bamatabois", "value": 2},
+    {"source": "Brevet", "target": "Judge", "value": 2},
+    {"source": "Brevet", "target": "Champmathieu", "value": 2},
+    {"source": "Brevet", "target": "Valjean", "value": 2},
+    {"source": "Brevet", "target": "Bamatabois", "value": 1},
+    {"source": "Chenildieu", "target": "Judge", "value": 2},
+    {"source": "Chenildieu", "target": "Champmathieu", "value": 2},
+    {"source": "Chenildieu", "target": "Brevet", "value": 2},
+    {"source": "Chenildieu", "target": "Valjean", "value": 2},
+    {"source": "Chenildieu", "target": "Bamatabois", "value": 1},
+    {"source": "Cochepaille", "target": "Judge", "value": 2},
+    {"source": "Cochepaille", "target": "Champmathieu", "value": 2},
+    {"source": "Cochepaille", "target": "Brevet", "value": 2},
+    {"source": "Cochepaille", "target": "Chenildieu", "value": 2},
+    {"source": "Cochepaille", "target": "Valjean", "value": 2},
+    {"source": "Cochepaille", "target": "Bamatabois", "value": 1},
+    {"source": "Pontmercy", "target": "Thenardier", "value": 1},
+    {"source": "Boulatruelle", "target": "Thenardier", "value": 1},
+    {"source": "Eponine", "target": "Mme.Thenardier", "value": 2},
+    {"source": "Eponine", "target": "Thenardier", "value": 3},
+    {"source": "Anzelma", "target": "Eponine", "value": 2},
+    {"source": "Anzelma", "target": "Thenardier", "value": 2},
+    {"source": "Anzelma", "target": "Mme.Thenardier", "value": 1},
+    {"source": "Woman2", "target": "Valjean", "value": 3},
+    {"source": "Woman2", "target": "Cosette", "value": 1},
+    {"source": "Woman2", "target": "Javert", "value": 1},
+    {"source": "MotherInnocent", "target": "Fauchelevent", "value": 3},
+    {"source": "MotherInnocent", "target": "Valjean", "value": 1},
+    {"source": "Gribier", "target": "Fauchelevent", "value": 2},
+    {"source": "Mme.Burgon", "target": "Jondrette", "value": 1},
+    {"source": "Gavroche", "target": "Mme.Burgon", "value": 2},
+    {"source": "Gavroche", "target": "Thenardier", "value": 1},
+    {"source": "Gavroche", "target": "Javert", "value": 1},
+    {"source": "Gavroche", "target": "Valjean", "value": 1},
+    {"source": "Gillenormand", "target": "Cosette", "value": 3},
+    {"source": "Gillenormand", "target": "Valjean", "value": 2},
+    {"source": "Magnon", "target": "Gillenormand", "value": 1},
+    {"source": "Magnon", "target": "Mme.Thenardier", "value": 1},
+    {"source": "Mlle.Gillenormand", "target": "Gillenormand", "value": 9},
+    {"source": "Mlle.Gillenormand", "target": "Cosette", "value": 2},
+    {"source": "Mlle.Gillenormand", "target": "Valjean", "value": 2},
+    {"source": "Mme.Pontmercy", "target": "Mlle.Gillenormand", "value": 1},
+    {"source": "Mme.Pontmercy", "target": "Pontmercy", "value": 1},
+    {"source": "Mlle.Vaubois", "target": "Mlle.Gillenormand", "value": 1},
+    {"source": "Lt.Gillenormand", "target": "Mlle.Gillenormand", "value": 2},
+    {"source": "Lt.Gillenormand", "target": "Gillenormand", "value": 1},
+    {"source": "Lt.Gillenormand", "target": "Cosette", "value": 1},
+    {"source": "Marius", "target": "Mlle.Gillenormand", "value": 6},
+    {"source": "Marius", "target": "Gillenormand", "value": 12},
+    {"source": "Marius", "target": "Pontmercy", "value": 1},
+    {"source": "Marius", "target": "Lt.Gillenormand", "value": 1},
+    {"source": "Marius", "target": "Cosette", "value": 21},
+    {"source": "Marius", "target": "Valjean", "value": 19},
+    {"source": "Marius", "target": "Tholomyes", "value": 1},
+    {"source": "Marius", "target": "Thenardier", "value": 2},
+    {"source": "Marius", "target": "Eponine", "value": 5},
+    {"source": "Marius", "target": "Gavroche", "value": 4},
+    {"source": "BaronessT", "target": "Gillenormand", "value": 1},
+    {"source": "BaronessT", "target": "Marius", "value": 1},
+    {"source": "Mabeuf", "target": "Marius", "value": 1},
+    {"source": "Mabeuf", "target": "Eponine", "value": 1},
+    {"source": "Mabeuf", "target": "Gavroche", "value": 1},
+    {"source": "Enjolras", "target": "Marius", "value": 7},
+    {"source": "Enjolras", "target": "Gavroche", "value": 7},
+    {"source": "Enjolras", "target": "Javert", "value": 6},
+    {"source": "Enjolras", "target": "Mabeuf", "value": 1},
+    {"source": "Enjolras", "target": "Valjean", "value": 4},
+    {"source": "Combeferre", "target": "Enjolras", "value": 15},
+    {"source": "Combeferre", "target": "Marius", "value": 5},
+    {"source": "Combeferre", "target": "Gavroche", "value": 6},
+    {"source": "Combeferre", "target": "Mabeuf", "value": 2},
+    {"source": "Prouvaire", "target": "Gavroche", "value": 1},
+    {"source": "Prouvaire", "target": "Enjolras", "value": 4},
+    {"source": "Prouvaire", "target": "Combeferre", "value": 2},
+    {"source": "Feuilly", "target": "Gavroche", "value": 2},
+    {"source": "Feuilly", "target": "Enjolras", "value": 6},
+    {"source": "Feuilly", "target": "Prouvaire", "value": 2},
+    {"source": "Feuilly", "target": "Combeferre", "value": 5},
+    {"source": "Feuilly", "target": "Mabeuf", "value": 7},
+    {"source": "Feuilly", "target": "Marius", "value": 1},
+    {"source": "Courfeyrac", "target": "Marius", "value": 9},
+    {"source": "Courfeyrac", "target": "Enjolras", "value": 17},
+    {"source": "Courfeyrac", "target": "Combeferre", "value": 13},
+    {"source": "Courfeyrac", "target": "Gavroche", "value": 7},
+    {"source": "Courfeyrac", "target": "Mabeuf", "value": 2},
+    {"source": "Courfeyrac", "target": "Eponine", "value": 1},
+    {"source": "Courfeyrac", "target": "Feuilly", "value": 6},
+    {"source": "Courfeyrac", "target": "Prouvaire", "value": 3},
+    {"source": "Bahorel", "target": "Combeferre", "value": 5},
+    {"source": "Bahorel", "target": "Gavroche", "value": 5},
+    {"source": "Bahorel", "target": "Courfeyrac", "value": 6},
+    {"source": "Bahorel", "target": "Mabeuf", "value": 2},
+    {"source": "Bahorel", "target": "Enjolras", "value": 4},
+    {"source": "Bahorel", "target": "Feuilly", "value": 3},
+    {"source": "Bahorel", "target": "Prouvaire", "value": 2},
+    {"source": "Bahorel", "target": "Marius", "value": 1},
+    {"source": "Bossuet", "target": "Marius", "value": 5},
+    {"source": "Bossuet", "target": "Courfeyrac", "value": 12},
+    {"source": "Bossuet", "target": "Gavroche", "value": 5},
+    {"source": "Bossuet", "target": "Bahorel", "value": 4},
+    {"source": "Bossuet", "target": "Enjolras", "value": 10},
+    {"source": "Bossuet", "target": "Feuilly", "value": 6},
+    {"source": "Bossuet", "target": "Prouvaire", "value": 2},
+    {"source": "Bossuet", "target": "Combeferre", "value": 9},
+    {"source": "Bossuet", "target": "Mabeuf", "value": 1},
+    {"source": "Bossuet", "target": "Valjean", "value": 1},
+    {"source": "Joly", "target": "Bahorel", "value": 5},
+    {"source": "Joly", "target": "Bossuet", "value": 7},
+    {"source": "Joly", "target": "Gavroche", "value": 3},
+    {"source": "Joly", "target": "Courfeyrac", "value": 5},
+    {"source": "Joly", "target": "Enjolras", "value": 5},
+    {"source": "Joly", "target": "Feuilly", "value": 5},
+    {"source": "Joly", "target": "Prouvaire", "value": 2},
+    {"source": "Joly", "target": "Combeferre", "value": 5},
+    {"source": "Joly", "target": "Mabeuf", "value": 1},
+    {"source": "Joly", "target": "Marius", "value": 6},
+    {"source": "Grantaire", "target": "Bossuet", "value": 3},
+    {"source": "Grantaire", "target": "Enjolras", "value": 3},
+    {"source": "Grantaire", "target": "Combeferre", "value": 1},
+    {"source": "Grantaire", "target": "Courfeyrac", "value": 2},
+    {"source": "Grantaire", "target": "Joly", "value": 2},
+    {"source": "Grantaire", "target": "Gavroche", "value": 1},
+    {"source": "Grantaire", "target": "Bahorel", "value": 1},
+    {"source": "Grantaire", "target": "Feuilly", "value": 1},
+    {"source": "Grantaire", "target": "Prouvaire", "value": 1},
+    {"source": "MotherPlutarch", "target": "Mabeuf", "value": 3},
+    {"source": "Gueulemer", "target": "Thenardier", "value": 5},
+    {"source": "Gueulemer", "target": "Valjean", "value": 1},
+    {"source": "Gueulemer", "target": "Mme.Thenardier", "value": 1},
+    {"source": "Gueulemer", "target": "Javert", "value": 1},
+    {"source": "Gueulemer", "target": "Gavroche", "value": 1},
+    {"source": "Gueulemer", "target": "Eponine", "value": 1},
+    {"source": "Babet", "target": "Thenardier", "value": 6},
+    {"source": "Babet", "target": "Gueulemer", "value": 6},
+    {"source": "Babet", "target": "Valjean", "value": 1},
+    {"source": "Babet", "target": "Mme.Thenardier", "value": 1},
+    {"source": "Babet", "target": "Javert", "value": 2},
+    {"source": "Babet", "target": "Gavroche", "value": 1},
+    {"source": "Babet", "target": "Eponine", "value": 1},
+    {"source": "Claquesous", "target": "Thenardier", "value": 4},
+    {"source": "Claquesous", "target": "Babet", "value": 4},
+    {"source": "Claquesous", "target": "Gueulemer", "value": 4},
+    {"source": "Claquesous", "target": "Valjean", "value": 1},
+    {"source": "Claquesous", "target": "Mme.Thenardier", "value": 1},
+    {"source": "Claquesous", "target": "Javert", "value": 1},
+    {"source": "Claquesous", "target": "Eponine", "value": 6},
+    {"source": "Claquesous", "target": "Enjolras", "value": 1},
+    {"source": "Montparnasse", "target": "Javert", "value": 1},
+    {"source": "Montparnasse", "target": "Babet", "value": 2},
+    {"source": "Montparnasse", "target": "Gueulemer", "value": 2},
+    {"source": "Montparnasse", "target": "Claquesous", "value": 2},
+    {"source": "Montparnasse", "target": "Valjean", "value": 1},
+    {"source": "Montparnasse", "target": "Gavroche", "value": 1},
+    {"source": "Montparnasse", "target": "Eponine", "value": 1},
+    {"source": "Montparnasse", "target": "Thenardier", "value": 1},
+    {"source": "Toussaint", "target": "Cosette", "value": 2},
+    {"source": "Toussaint", "target": "Javert", "value": 1},
+    {"source": "Toussaint", "target": "Valjean", "value": 1},
+    {"source": "Child1", "target": "Gavroche", "value": 2},
+    {"source": "Child2", "target": "Gavroche", "value": 2},
+    {"source": "Child2", "target": "Child1", "value": 3},
+    {"source": "Brujon", "target": "Babet", "value": 3},
+    {"source": "Brujon", "target": "Gueulemer", "value": 3},
+    {"source": "Brujon", "target": "Thenardier", "value": 3},
+    {"source": "Brujon", "target": "Gavroche", "value": 1},
+    {"source": "Brujon", "target": "Eponine", "value": 1},
+    {"source": "Brujon", "target": "Claquesous", "value": 1},
+    {"source": "Brujon", "target": "Montparnasse", "value": 1},
+    {"source": "Mme.Hucheloup", "target": "Bossuet", "value": 1},
+    {"source": "Mme.Hucheloup", "target": "Joly", "value": 3},
+    {"source": "Mme.Hucheloup", "target": "Grantaire", "value": 1},
+    {"source": "Mme.Hucheloup", "target": "Bahorel", "value": 1},
+    {"source": "Mme.Hucheloup", "target": "Courfeyrac", "value": 1},
+    {"source": "Mme.Hucheloup", "target": "Gavroche", "value": 1},
+    {"source": "Mme.Hucheloup", "target": "Enjolras", "value": 1},
+    {"source": "Eponine", "target": "Cosette", "value": 1},
+    {"source": "Courfeyrac", "target": "Joly", "value": 1},
+    {"source": "Bossuet", "target": "Grantaire", "value": 1},
+    {"source": "Enjolras", "target": "Toussaint", "value": 1},
+    {"source": "Child1", "target": "Gavroche", "value": 1},
+    {"source": "Mabeuf", "target": "Babet", "value": 1},
+
+    {"source": "Geborand", "target": "Perpetue", "value": 3},
+    {"source": "Joly", "target": "Dahlia", "value": 1},
+    {"source": "Napoleon", "target": "Listolier", "value": 1},
+    {"source": "Child2", "target": "Brevet", "value": 1},
+    {"source": "Child2", "target": "Montparnasse", "value": 5},
+    {"source": "Myriel", "target": "Cochepaille", "value": 1}
+  ]
+};
+var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+const simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+
+//  d3.json(myJSON, function(error, graph) {
+  const graph = myJSON;
+
+  //if (error) throw error;
+
+ var link = svg.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(graph.links)
+    .enter().append("line")
+    .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+  var node = svg.append("g")
+      .attr("class", "nodes")
+    .selectAll("circle")
+    .data(graph.nodes)
+    .enter().append("circle")
+      .attr("r", 5)
+      .attr("fill", function(d) { return color(d.group); })
+      .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+  node.append("title")
+      .text(function(d) { return d.id; });
+
+  simulation
+      .nodes(graph.nodes)
+      .on("tick", ticked);
+
+  simulation.force("link")
+      .links(graph.links);
+function ticked() {
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
+//});
+// end d3
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+
+</script>
+    </body>
+</html>
+
